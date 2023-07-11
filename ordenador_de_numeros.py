@@ -28,11 +28,18 @@ while numeros:
 print("Números ordenados:", numeros_ordenados) """
 nombres_y_numeros = []
 
-# Ingresar los 10 números y nombres
+# Ingresar las 7 notas de cada materia y nombres
 for i in range(1, 11):
-    numero = int(input(f"Dame el número {i}: "))
+    nota1 = int(input(f"Dame la nota de matemacica {i}: "))
+    nota2 = int(input(f"Dame la nota de lengua {i}: "))
+    nota3 = int(input(f"Dame la nota de ciencias sociales {i}: "))
+    nota4 = int(input(f"Dame la nota de ciencias naturales {i}: "))
+    nota5 = int(input(f"Dame la nota de arte {i}: "))
+    nota6 = int(input(f"Dame la nota de ingles {i}: "))
+    nota7 = int(input(f"Dame la nota de educacion fisica {i}: "))
+    promedio= (nota1+nota2+nota3+nota4+nota5+nota6+nota7)/7
     nombre = input(f"Dame el nombre {i}: ")
-    nombres_y_numeros.append((numero, nombre))
+    nombres_y_numeros.append((promedio, nombre))
 
 numeros_ordenados = []
 
